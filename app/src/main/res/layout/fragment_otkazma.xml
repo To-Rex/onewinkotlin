@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bascgraund">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refleshotkaz">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:background="@drawable/viewotkaz"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnotkavalyuta"
+                android:layout_width="207dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="92dp"
+                android:text="@string/netcash_uzs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view4" />
+
+            <EditText
+                android:id="@+id/ediotkanetkash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:maxLength="4"
+                android:hint="@string/netCash"
+                android:inputType="numberDecimal"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintEnd_toEndOf="@+id/btnotkavalyuta"
+                app:layout_constraintStart_toStartOf="@+id/btnotkavalyuta"
+                app:layout_constraintTop_toBottomOf="@+id/btnotkavalyuta"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txtotkanarx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect"
+                android:textColor="@color/yashil"
+                app:layout_constraintStart_toStartOf="@+id/ediotkanetkash"
+                app:layout_constraintTop_toBottomOf="@+id/ediotkanetkash" />
+
+            <EditText
+                android:id="@+id/ediotkakarta"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="@string/karta_raqam_xxxx_xxxx_xxxx_xxxx"
+                android:inputType="numberDecimal"
+                android:maxLength="19"
+                android:textColor="@color/kok"
+                app:layout_constraintStart_toStartOf="@+id/ediotkanetkash"
+                app:layout_constraintTop_toBottomOf="@+id/ediotkanetkash"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/btnotkachiqar"
+                android:layout_width="236dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/chiqarib_olmoq"
+                app:layout_constraintEnd_toEndOf="@+id/ediotkanetkash"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ediotkanetkash"
+                app:layout_constraintTop_toBottomOf="@+id/ediotkakarta" />
+
+            <Button
+                android:id="@+id/btnotkazsotibol"
+                android:layout_width="236dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sotib_olmoq"
+                app:layout_constraintEnd_toEndOf="@+id/btnotkachiqar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnotkachiqar"
+                app:layout_constraintTop_toBottomOf="@+id/btnotkachiqar" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottiotkatarix"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/history" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toTopOf="@+id/view4"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtotkapul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/netCash"
+                android:textColor="@color/jigarrang"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <ProgressBar
+                android:id="@+id/progressBarotka"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="85dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/txtotkaeslat"
+                android:layout_width="346dp"
+                android:layout_height="183dp"
+                android:text="@string/eslatma2"
+                android:textSize="34sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/btnotkavalyuta"
+                app:layout_constraintStart_toStartOf="@+id/btnotkavalyuta"
+                app:layout_constraintTop_toBottomOf="@+id/btnotkavalyuta" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

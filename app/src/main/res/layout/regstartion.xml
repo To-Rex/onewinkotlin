@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bascgraund"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/ediroypochta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/pochta"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/ediroyparol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/parol"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="@+id/ediroypochta"
+        app:layout_constraintStart_toStartOf="@+id/ediroypochta"
+        app:layout_constraintTop_toBottomOf="@+id/ediroypochta"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnroyhisob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hisob_yaratish"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ediroyism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ismi"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="@+id/ediroyparol"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ediroyparol"
+        app:layout_constraintTop_toBottomOf="@+id/ediroyparol"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/ediroyfamil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/familya"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="@+id/ediroyism"
+        app:layout_constraintStart_toStartOf="@+id/ediroyism"
+        app:layout_constraintTop_toBottomOf="@+id/ediroyism"
+        tools:ignore="Autofill" />
+
+    <DatePicker
+        android:id="@+id/ediroydatapicker"
+        android:layout_width="245dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="24dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="@+id/ediroylink"
+        app:layout_constraintStart_toStartOf="@+id/ediroylink"
+        app:layout_constraintTop_toBottomOf="@+id/ediroylink" />
+
+    <EditText
+        android:id="@+id/ediroytel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/telefon_raqam"
+        android:inputType="phone"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="@+id/ediroyfamil"
+        app:layout_constraintStart_toStartOf="@+id/ediroyfamil"
+        app:layout_constraintTop_toBottomOf="@+id/ediroyfamil"
+        tools:ignore="Autofill" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="87dp"
+        android:layout_height="76dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnroyhisob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ediroylink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColorHint="@color/jigarrang"
+        android:inputType="textPersonName"
+        android:hint="@string/link_id_majburiy_emas"
+        app:layout_constraintEnd_toEndOf="@+id/ediroytel"
+        app:layout_constraintStart_toStartOf="@+id/ediroytel"
+        app:layout_constraintTop_toBottomOf="@+id/ediroytel"
+        tools:ignore="Autofill" />
+</androidx.constraintlayout.widget.ConstraintLayout>

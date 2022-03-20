@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swiperefleshhisob">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-light"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="36sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewbugun"
+                android:layout_width="180dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewkecha"
+                android:layout_width="180dp"
+                android:layout_height="94dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/viewbugun" />
+
+            <View
+                android:id="@+id/viewhafta"
+                android:layout_width="180dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewbugun"
+                app:layout_constraintStart_toStartOf="@+id/viewbugun"
+                app:layout_constraintTop_toBottomOf="@+id/viewbugun" />
+
+            <View
+                android:id="@+id/viewoy"
+                android:layout_width="180dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewkecha"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewkecha"
+                app:layout_constraintTop_toBottomOf="@+id/viewkecha" />
+
+            <View
+                android:id="@+id/viewjami"
+                android:layout_width="386dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewoy"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="@+id/viewhafta"
+                app:layout_constraintTop_toBottomOf="@+id/viewhafta" />
+
+            <View
+                android:id="@+id/viewhompromocod"
+                android:layout_width="386dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewjami"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewjami"
+                app:layout_constraintTop_toBottomOf="@+id/viewjami" />
+
+            <View
+                android:id="@+id/viewhomallpromocode"
+                android:layout_width="386dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewhompromocod"
+                app:layout_constraintStart_toStartOf="@+id/viewhompromocod"
+                app:layout_constraintTop_toBottomOf="@+id/viewhompromocod" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50121653" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toBottomOf="@+id/viewbugun"
+                app:layout_constraintStart_toStartOf="@+id/viewbugun"
+                app:layout_constraintTop_toTopOf="@+id/viewbugun"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toBottomOf="@+id/viewkecha"
+                app:layout_constraintStart_toStartOf="@+id/viewkecha"
+                app:layout_constraintTop_toTopOf="@+id/viewkecha"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhafta"
+                app:layout_constraintStart_toStartOf="@+id/viewhafta"
+                app:layout_constraintTop_toTopOf="@+id/viewhafta"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toBottomOf="@+id/viewoy"
+                app:layout_constraintStart_toStartOf="@+id/viewoy"
+                app:layout_constraintTop_toTopOf="@+id/viewoy"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="76dp"
+                android:src="@drawable/logonetcash"
+                app:layout_constraintBottom_toBottomOf="@+id/viewjami"
+                app:layout_constraintStart_toStartOf="@+id/viewjami"
+                app:layout_constraintTop_toTopOf="@+id/viewjami"
+                app:layout_constraintVertical_bias="0.488"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="81dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/promocodelogo"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhompromocod"
+                app:layout_constraintStart_toStartOf="@+id/viewhompromocod"
+                app:layout_constraintTop_toTopOf="@+id/viewhompromocod"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="81dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/promocodelogo"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhomallpromocode"
+                app:layout_constraintStart_toStartOf="@+id/viewhomallpromocode"
+                app:layout_constraintTop_toTopOf="@+id/viewhomallpromocode"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txthom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_0"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/txthom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_0"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                app:layout_constraintStart_toEndOf="@+id/imageView1"
+                app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+            <TextView
+                android:id="@+id/txthom3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_0"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/txthom4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_0"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/txthom5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/_0"
+                android:textColor="@color/jigarrang"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/txtbogsom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/promocodd"
+                android:textColor="@color/fon"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/viewhompromocod" />
+
+            <TextView
+                android:id="@+id/son5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/to_plangan_haq"
+                android:textColor="@color/fon"
+                app:layout_constraintBottom_toBottomOf="@+id/viewbugun"
+                app:layout_constraintEnd_toEndOf="@+id/viewbugun"
+                app:layout_constraintStart_toStartOf="@+id/viewbugun" />
+
+            <TextView
+                android:id="@+id/son6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/kechagi_haq"
+                android:textColor="@color/fon"
+                app:layout_constraintBottom_toBottomOf="@+id/viewkecha"
+                app:layout_constraintEnd_toEndOf="@+id/viewkecha"
+                app:layout_constraintStart_toStartOf="@+id/viewkecha" />
+
+            <TextView
+                android:id="@+id/son7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/_30_kunlik_haq"
+                android:textColor="@color/fon"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhafta"
+                app:layout_constraintEnd_toEndOf="@+id/viewhafta"
+                app:layout_constraintStart_toStartOf="@+id/viewhafta" />
+
+            <TextView
+                android:id="@+id/son8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/hozzirgi_oy_uchun"
+                android:textColor="@color/fon"
+                app:layout_constraintBottom_toBottomOf="@+id/viewoy"
+                app:layout_constraintEnd_toEndOf="@+id/viewoy"
+                app:layout_constraintStart_toStartOf="@+id/viewoy" />
+
+            <TextView
+                android:id="@+id/son9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/jami_haq"
+                android:textColor="@color/fon"
+                app:layout_constraintBottom_toBottomOf="@+id/viewjami"
+                app:layout_constraintEnd_toEndOf="@+id/viewjami"
+                app:layout_constraintStart_toStartOf="@+id/viewjami" />
+
+            <TextView
+                android:id="@+id/son0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/umumiy_promocodlar"
+                android:textColor="@color/fon"
+                app:layout_constraintStart_toStartOf="@+id/txtbogsom"
+                app:layout_constraintTop_toTopOf="@+id/viewhomallpromocode" />
+
+            <TextView
+                android:id="@+id/txthompromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textColor="@color/fon"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhompromocod"
+                app:layout_constraintEnd_toEndOf="@+id/viewhompromocod"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/viewhompromocod" />
+
+            <TextView
+                android:id="@+id/txthompromo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/promocod"
+                android:textColor="@color/fon"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewhomallpromocode"
+                app:layout_constraintEnd_toEndOf="@+id/viewhomallpromocode"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/viewhomallpromocode" />
+
+            <ProgressBar
+                android:id="@+id/progresshisob"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="74dp"
+                android:layout_height="68dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/wiewlist"
+                android:layout_width="386dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/viewhomallpromocode"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewhomallpromocode"
+                app:layout_constraintTop_toBottomOf="@+id/viewhomallpromocode" />
+
+            <View
+                android:id="@+id/wiewlist2"
+                android:layout_width="386dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/wiewlist"
+                app:layout_constraintTop_toBottomOf="@+id/wiewlist" />
+
+            <TextView
+                android:id="@+id/txthomregdep"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textColor="@color/fon"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist" />
+
+            <TextView
+                android:id="@+id/txthomfoiz"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textAlignment="textEnd"
+                android:textColor="@color/fon"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txthomregdep"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/txthomregdep" />
+
+            <TextView
+                android:id="@+id/texthomnewdepo"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textColor="@color/fon"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist2"
+                app:layout_constraintStart_toStartOf="@+id/txthomregdep"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist2"
+                tools:ignore="SmallSp" />
+
+
+            <TextView
+                android:id="@+id/txthomfoiz1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textAlignment="textEnd"
+                android:textColor="@color/fon"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/texthomnewdepo"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist2"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/texthomnewdepo" />
+
+            <View
+                android:id="@+id/wiewlist4"
+                android:layout_width="386dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist3"
+                app:layout_constraintStart_toStartOf="@+id/wiewlist3"
+                app:layout_constraintTop_toBottomOf="@+id/wiewlist3" />
+
+            <View
+                android:id="@+id/wiewlist3"
+                android:layout_width="386dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/wiev"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist2"
+                app:layout_constraintStart_toStartOf="@+id/wiewlist2"
+                app:layout_constraintTop_toBottomOf="@+id/wiewlist2" />
+
+            <TextView
+                android:id="@+id/txthomfoiz3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textAlignment="textEnd"
+                android:textColor="@color/fon"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist4"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist4" />
+
+            <TextView
+                android:id="@+id/txthomfoiz2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textAlignment="textEnd"
+                android:textColor="@color/fon"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist3"
+                app:layout_constraintEnd_toEndOf="@+id/wiewlist3"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist3"
+                app:layout_constraintVertical_bias="0.652" />
+            <TextView
+                android:id="@+id/texthomnewdepo2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textColor="@color/fon"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist3"
+                app:layout_constraintStart_toStartOf="@+id/texthomnewdepo"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist3"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/texthomnewdepo3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/connect"
+                android:textColor="@color/fon"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wiewlist4"
+                app:layout_constraintStart_toStartOf="@+id/texthomnewdepo2"
+                app:layout_constraintTop_toTopOf="@+id/wiewlist4"
+                tools:ignore="SmallSp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/button_onoff_indicator_on"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animhombtn"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/topp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

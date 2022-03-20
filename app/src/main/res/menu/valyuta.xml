@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/dollarpul"
+        android:title="@string/netcash_usd" />
+    <item
+        android:id="@+id/europul"
+        android:title="@string/netcash_eur" />
+    <item
+        android:id="@+id/rublpul"
+        android:title="@string/netcash_rubl" />
+    <item
+        android:id="@+id/sompul"
+        android:title="@string/netcash_uzs"/>
+</menu>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtlogforgat"
+    android:background="@drawable/bascgraund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edilogpochta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:hint="@string/pochta"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edilogparol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/parol"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textColorHint="@color/jigarrang"
+        app:layout_constraintStart_toStartOf="@+id/edilogpochta"
+        app:layout_constraintTop_toBottomOf="@+id/edilogpochta"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnlogkir"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="@string/kirish"
+        android:textSize="20sp"
+        android:textColor="@color/jigarrang"
+        app:layout_constraintEnd_toEndOf="@+id/edilogparol"
+        app:layout_constraintStart_toStartOf="@+id/edilogparol"
+        app:layout_constraintTop_toBottomOf="@+id/edilogparol" />
+
+    <Button
+        android:id="@+id/btnparroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fon"
+        android:text="@string/royhatdan_o_tish"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="173dp" />
+
+    <TextView
+        android:id="@+id/txtbogrubl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogkir" />
+
+    <ProgressBar
+        android:id="@+id/progressBarlog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="88dp"
+        android:layout_height="91dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtlogforgatclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qizil"
+        android:text="@string/parolni_unutdingizmi"
+        app:layout_constraintEnd_toEndOf="@+id/edilogparol"
+        app:layout_constraintTop_toBottomOf="@+id/edilogparol" />
+</androidx.constraintlayout.widget.ConstraintLayout>

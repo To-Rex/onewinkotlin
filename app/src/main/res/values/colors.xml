@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#04FAC8</color>
+    <color name="purple_500">#04FAC8</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="purple_700">#04FAC8</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="fon">#A7B9DF</color>
+    <color name="fon1">#DC017C78</color>
+    <color name="fon2">#000000</color>
+    <color name="hint">#444242</color>
+    <color name="fon3">#E90A0122</color>
+    <color name="jigarrang">#FFBF00</color>
+    <color name="qizil">#FF0000</color>
+    <color name="yashil">#5BFB05</color>
+    <color name="kok">#053AFB</color>
+    <color name="pushti">#D605FB</color>
+    <color name="sariq">#FBE205</color>
+    <color name="hovorang">#05FBFB</color>
+    <color name="white">#FFFFFF</color>
+</resources>

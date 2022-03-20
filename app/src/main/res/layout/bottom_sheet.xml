@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bascgraund"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/yashil"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/txtbottomxabar"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/connect"
+                android:textColor="@color/jigarrang"
+                android:textSize="25sp"
+                android:textIsSelectable="true"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+            <TextView
+                android:id="@+id/txtbottomyangilik"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/connect"
+                android:textColor="@color/jigarrang"
+                android:textSize="25sp"
+                android:textIsSelectable="true"
+                tools:ignore="RtlHardcoded" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="-47dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingClass,ScrollViewSize">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="250dp"/>
+                    <ImageView
+                        android:id="@+id/rasm1"
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/net_kash"
+                        tools:ignore="ContentDescription" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="250dp"/>
+                    <ImageView
+                        android:id="@+id/rasm2"
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/net_kash"
+                        tools:ignore="ContentDescription" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="250dp"/>
+                    <ImageView
+                        android:id="@+id/rasm3"
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/net_kash"
+                        tools:ignore="ContentDescription" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="250dp"/>
+                    <ImageView
+                        android:id="@+id/rasm4"
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/net_kash"
+                        tools:ignore="ContentDescription" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="250dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
